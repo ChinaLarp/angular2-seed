@@ -9,6 +9,7 @@ import { HttpModule } from '@angular/http';
 
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './components/header/header.component';
 import { RepoBrowserComponent } from './github/repo-browser/repo-browser.component';
 import { RepoListComponent } from './github/repo-list/repo-list.component';
 import { RepoDetailComponent } from './github/repo-detail/repo-detail.component';
@@ -22,6 +23,7 @@ import { ContactComponent } from './contact/contact.component';
     RepoBrowserComponent,
     RepoListComponent,
     RepoDetailComponent,
+    HeaderComponent,
     HomeComponent,
     ContactComponent
   ],

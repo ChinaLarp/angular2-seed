@@ -1,7 +1,29 @@
 header{
-	background-color: #aaaaaa;
-	font-size:30px;
-    font-family:'微软雅黑';
-	vertical-align:top ;
-	text-align:left;
+	display:block;
+	min-height: 60px;
+	padding: 8px 20px 0px 20px;
+    border: 0;
 }
+.header{
+	width: 100%;
+    padding: 0 0 12px 0;
+}
+img {
+text-align: center;
+width: 450px;
+height: 150px;
+}
+.alignleft {
+ display: inline;
+ float: left;
+}
+.alignright {
+ display: inline;
+ float: right;
+}
+.aligncenter{
+	display: block;
+	clear:both ;
+	margin: auto;
+}
+

@@ -16,6 +16,7 @@ import { RepoDetailComponent } from './github/repo-detail/repo-detail.component'
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent} from './components/footer/footer.component';
+import { NavBarComponent} from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FooterComponent} from './components/footer/footer.component';
     HeaderComponent,
     HomeComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

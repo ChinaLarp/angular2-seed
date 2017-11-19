@@ -1,22 +1,16 @@
 footer{
-	
-	background-color: #aaaaaa;
+	padding-top: 20px;
+	background-image: url('/app/assets/img/footer-background-city.jpg');
+	background-size: 100%;
+	background-position: top center;
 	font-size:16px;
 	vertical-align:bottom;
 	text-align:center;
 }
 .copyright{
-	color:#ffffff; font-size:16px; padding:10px;
+	color:#ffffff; font-size:16px; padding:20px;
 }
-.copyright a
-{
-	color:#50a1c4;
-}
-.copyright a:hover
-{
-	color:#fcc240;
-	font-size:20px;
-}
+
 
 
 

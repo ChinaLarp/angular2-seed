@@ -1,0 +1,53 @@
+
+  .right_float {
+    position: fixed;
+    right: 0;
+    top: 120px;
+    width: 180px;
+    height: 450px;
+    background-image: url('/app/assets/img/float_bg.png');
+    background-size: 170px 450px;
+    background-repeat: no-repeat;
+    z-index: 999;
+    transition: 0.6s;
+  }
+  .right_float .wechat_erCode img {
+    width: 140px;
+  }
+  .right_float_on {
+    right: -165px;
+  }
+  .right_float .close {
+    width: 45px;
+    height: 45px;
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+    position: absolute;
+    left: 0;
+    top: 67px;
+  }
+  .right_float .close {
+    text-align: center;
+    line-height: 55px;
+    background-image: url('/app/assets/img/float_hide.png');
+    background-repeat: no-repeat;
+    background-position: center 10px;
+  }
+  .right_float .float_hide {
+    background-image: url('/app/assets/img/float_bg.png');
+  }
+  .float_content {
+    margin-top: 200px;
+    margin-left: -10px;
+    text-align: center;
+  }
+  .weChatCode_wrap img {
+    width: 140px;
+  }
+  .float_content .icon_wrap {
+    width: 42%;
+    margin: 0 auto;
+    text-align: justify;
+  }
+
+/*right float end*/

@@ -1,19 +1,65 @@
-<h3>Home Component1</h3>
-<p>Welcome to Angular Seed</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Praesent finibus erat a blandit bibendum.
-Sed condimentum libero ut egestas varius.
-Ut vel erat pharetra sem venenatis finibus et et ipsum.
-Cras eget eros eget augue interdum faucibus fringilla nec erat.
-<p>Morbi auctor nunc at dapibus volutpat.
-Donec consequat libero venenatis ipsum sagittis, at tincidunt augue porttitor.</p>
-<p>Cras lobortis libero vel blandit posuere.
-Etiam venenatis augue quis lacinia euismod.
-In sit amet urna gravida nibh blandit malesuada.
-Integer in dui finibus sapien porttitor luctus.
-Donec blandit neque vitae efficitur maximus.
-Morbi consectetur nunc vel magna bibendum, gravida feugiat tortor bibendum.</p>
-<p>Morbi at velit ut justo ultrices pulvinar.
-Nulla in arcu eget metus finibus ullamcorper nec vitae arcu.
-Vestibulum interdum quam eget odio convallis ullamcorper.
-Maecenas nec eros quis diam sollicitudin pharetra tincidunt eget ipsum.</p>
+<div class='content'>
+	<!-- Download APPs -->
+	<div class="download_wrap flex">
+        <div class="ios_download">
+            <a href=""><img src="/app/assets/img/download_ios.png" alt="全民侦探社" width="400px"></a>
+        </div>
+        <div class="android_download">
+            <a href="h"><img src="/app/assets/img/download_android.png" alt="全民侦探社" width="400px"></a>
+        </div>
+    </div>
+
+	<div class='news'>
+		<!-- sliding images -->
+		<div class='news-left'>
+			<carousel class='text-center'>
+	            <slide>
+	                <img class='img-main-carousel' src="/app/assets/img/top1.png" alt="First slide" >
+	                <div class="carousel-caption" >
+	                    <h3>风波起</h3>
+	                    <p>家国情仇，只在一念之间！</p>
+	                </div>
+	            </slide>
+	            <slide>
+	                <img class='img-main-carousel' src="/app/assets/img/top5.png" alt="Second slide" >
+	                <div class="carousel-caption">
+	                    <h3>名侦探</h3>
+	                    <p>谁是下一个名侦探？</p>
+	                </div>
+	            </slide>
+	            <slide>
+	                <img class='img-main-carousel' src="/app/assets/img/top3.png" alt="Third slide">
+	                <div class="carousel-caption">
+	                    <h3>万圣节惊魂夜</h3>
+	                    <p>魑魅魍魉，真假难辨！</p>
+	                </div>
+	            </slide>
+	        </carousel>
+    	</div>
+
+    	<!-- Latest News -->
+    	<div class='news-right'>
+ 		    <div class='hd'>
+ 		    	<ul class='clear'>
+ 		    	<li>最新公告</li>
+ 		    </ul>
+ 		    </div>
+
+ 		    <div class='bd'>
+ 		    	<ul *ngFor="let content of contents; let i = index " >
+ 		    		<li *ngIf="i > contents.length - 7">
+                        {{ content.content }}
+                        <span class="time ng-binding">
+                        	{{ content.release }}
+                        </span>
+                    </li>
+                </ul>
+                <div style="position: relative;text-align:right;">
+                	<a href="" style="margin-right: 55px">+More</a>
+                <div>               
+ 		    </div>
+
+
+    	</div>
+	</div>
+</div>
